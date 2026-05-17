@@ -2613,6 +2613,7 @@ section.subbjects-section {
   .campus-wrapper{
     /* grid-template-columns:1fr; */
     display:block;
+    margin-top:20px;
   }
 
   .campus-map iframe{
