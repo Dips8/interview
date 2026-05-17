@@ -1177,11 +1177,7 @@ section#classes {
   width:100%;
   height:5px;
 
-  background:linear-gradient(
-    90deg,
-    #0d47a1,
-    #42a5f5
-  );
+  background:#D8DF29;
 
   transform:scaleX(0);
   transform-origin:left;
