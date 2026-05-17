@@ -2611,16 +2611,14 @@ section.subbjects-section {
 @media(max-width:992px){
 
   .campus-wrapper{
-    /* grid-template-columns:1fr; */
-    display:block;
+    grid-template-columns:1fr;
+  
   }
-  .campus-map{
-    margin-top:20px !important;
-  }
+ 
 
   .campus-map iframe{
     min-height:400px;
-    padding-top:20px;
+  
   }
 
 }
