@@ -2611,7 +2611,8 @@ section.subbjects-section {
 @media(max-width:992px){
 
   .campus-wrapper{
-    grid-template-columns:1fr;
+    /* grid-template-columns:1fr; */
+    display:block;
   }
 
   .campus-map iframe{
