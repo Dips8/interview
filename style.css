@@ -2620,6 +2620,7 @@ section.subbjects-section {
 
   .campus-map iframe{
     min-height:400px;
+    padding-top:20px;
   }
 
 }
