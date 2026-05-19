@@ -26,7 +26,7 @@
   <div class="container">
 
     <a class="navbar-brand" href="#">
-      <img src="image/Logo.png" alt="NVN School Logo">
+      <img src="../interview/image/logo.png" alt="NVN School Logo">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -185,6 +185,12 @@
               <div class="mb-3">
                 <textarea name="message" class="form-control" rows="2" placeholder="Message"></textarea>
               </div>
+              <input type="hidden" name="utm_source" id="utm_source">
+<input type="hidden" name="utm_medium" id="utm_medium">
+<input type="hidden" name="utm_campaign" id="utm_campaign">
+<input type="hidden" name="utm_term" id="utm_term">
+<input type="hidden" name="utm_content" id="utm_content">
+<input type="hidden" name="url" id="url">
 
               <button type="submit" class="submit-btn">
                 Submit Enquiry
@@ -211,7 +217,7 @@
 
         <div class="about-image-wrapper">
 
-          <img src="image/about3.jpg"
+          <img src="../interview/image/about3.jpg"
             alt="School Campus" class="img-fluid main-about-image">
 
           <div class="experience-card">
@@ -1626,7 +1632,7 @@
 
       <div class="footer-about">
 
-        <img src="image/Logo.png" alt="NVN School Logo" class="footer-logo">
+        <img src="../interview/image/Logo.png" alt="NVN School Logo" class="footer-logo">
 
         <p>
           Empowering students with academic excellence, innovation,
@@ -1706,6 +1712,38 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+
+function getUTMParams() {
+
+  const params = new URLSearchParams(window.location.search);
+
+  return {
+    utm_source: params.get("utm_source") || "",
+    utm_medium: params.get("utm_medium") || "",
+    utm_campaign: params.get("utm_campaign") || "",
+    utm_term: params.get("utm_term") || "",
+    utm_content: params.get("utm_content") || "",
+    url: window.location.href
+  };
+
+}
+
+
+</script>
+<script>
+
+const utmData = getUTMParams();
+
+document.getElementById("utm_source").value = utmData.utm_source;
+document.getElementById("utm_medium").value = utmData.utm_medium;
+document.getElementById("utm_campaign").value = utmData.utm_campaign;
+document.getElementById("utm_term").value = utmData.utm_term;
+document.getElementById("utm_content").value = utmData.utm_content;
+document.getElementById("url").value = utmData.url;
+
+</script>
+<script>
+
 
 const scriptURL = "https://script.google.com/macros/s/AKfycbwgLZXlI3T_LyfwY5DJsgP7s1dnxIHcrrNSSdY_KiqGsEoBC897HV3QOhQVX_8QHMj-Dw/exec";
 
